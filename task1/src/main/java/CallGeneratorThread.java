@@ -1,6 +1,6 @@
 public class CallGeneratorThread extends Thread {
 
-    public static final int NUMBER_OF_CALLS = 20;
+
 
     private final Atc atc;
 
@@ -10,7 +10,7 @@ public class CallGeneratorThread extends Thread {
 
     @Override
     public void run() {
-        for (int i = 1; i <= NUMBER_OF_CALLS; i++) {
+        for (int i = 1; i <= Main.NUMBER_OF_CALLS; i++) {
             try {
                 String currCall = "Call" + i;
                 atc.addedCall(currCall);
